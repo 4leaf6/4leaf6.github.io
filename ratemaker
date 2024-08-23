@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guilherme's Portfolio</title>
+  </head>
+  <body>
+    <div id="start"><a href="about.html">About</a>
+    <h3><a href="https://4leaf6.github.io/">Guilherme<br>Feitosa</a></h3>
+    <br><br><br></div>
+    <div id="face">
+      <div id="product">
+        <h1>Rate Maker</h1>
+          <h3>C++ Code Snippet</h3>
+            <p><em>Program that calculates a single fare which includes tourist tax and commissions, aimed at simplifying billing process of hotel chains.</em></p>
+              <p>During my days as receptionist in the Algarve region, I faced a situation regarding tourist tax: I would forget charging or simply charge the wrong amount multiple times.<br>That's when I wondered if there wasn't any other simpler way of charging it.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
