@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+  flex-grow: 1;
+}
+
+.content p {
+  margin: 300;
+  
+}
+
+* {
+  font-family: "Helvetica";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  margin: 13;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: block;
+}
+
+.man {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.man li {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.man a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.vaultman {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.vaultman li {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.vaultman a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
