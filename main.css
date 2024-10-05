@@ -10,11 +10,23 @@ body {
 
 .content{
   flex-grow: 1;
+  margin: 10%;
 }
 
-.content p {
-  margin: 300;
-  
+.socials {
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.socials li {
+  margin: 5% 1% 0 0;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
 }
 
 * {
@@ -30,53 +42,54 @@ body {
 .navbar {
   display: flex;
   justify-content: left;
-  margin: 13;
-  padding: 0;
+  margin: 1%;
+  padding: 2%;
   list-style-type: none;
 }
 
 .navbar li {
-  margin: 0 15px;
+  margin: 0 0 0 2%;
   text-decoration: none;
 }
 
 .navbar li a {
   text-decoration: none;
   color: black;
-  padding: 10px 20px;
+  padding: 0;
   display: block;
 }
 
 .man {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px;
-  gap: 10px;
+  gap: 5%;
   list-style-type: none;
 }
 
 .man li {
   background-color: aquamarine;
   text-align: center;
+  padding: 10%;
 }
 
 .man a{
   text-decoration: none;
   color: black;
-  text-align: center;
 }
 
 .vaultman {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  gap: 10px;
+  gap: 5%;
   list-style-type: none;
+  
 }
 
 .vaultman li {
   background-color: aquamarine;
   text-align: center;
+  padding: 10%;
+  
 }
 
 .vaultman a {
@@ -86,4 +99,5 @@ body {
 
 footer {
   text-align: center;
+  color:grey;
 }
