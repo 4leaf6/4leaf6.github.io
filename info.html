@@ -23,15 +23,24 @@
     }
 
     #page-content {
-      flex-grow: 1;
-      position: relative;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* Two columns: 50% each */
+          gap: 20px; /* Horizontal gap between columns */
+          width: 100%;
+          max-width: 800px;
+          margin: 20px auto;
+        }
+        
+        #summary {
+          text-align: center;
+        }
+        
+        #vertical-stack {
+          display: flex;
+          flex-direction: column; /* Stack vertically */
+          gap: 10px; /* Space between Experience and Education */
+        }
+        
     #page-content h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -182,11 +191,8 @@
     <div id="page-content">
         <h1>Info</h1>
         <div id="summary">
-            <p>Hello everyone, I'm Guilherme Feitosa<br />
+            <p>Hello everyone,<br />I'm Guilherme Feitosa,<br />
             this is my time line so far.<br /></p>
-        </div>
-        <div id="work exp">
-            <p>This is my work experience.</p>
         </div>
         <div id="footer">
             <ul>
@@ -194,6 +200,14 @@
                 <li><a href="https://www.hackerrank.com/dashboard" target="_blank">Hackerrank</a></li>
                 <li><a href="https://www.linkedin.com/in/developing-better-future/" target="_blank">LinkedIn</a></li>
             </ul>
+        </div>
+        <div id="vertical-stack">
+            <div id="Exp">
+                <h3>Experience</h3>
+            </div>
+            <div id="Acad">
+                <h3>Education</h3>
+            </div>
         </div>
     </div>
   <nav>
