@@ -1,0 +1,205 @@
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Silkscreen', cursive;
+      overflow: auto;
+    }
+
+    body.menu-active {
+      overflow: hidden;
+    }
+
+    #page-content {
+        display: grid;
+        grid-template-columns: 30% auto;
+        gap: 20px;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+        
+    #summary {
+        grid-column: 1;
+        text-align: center;
+    }
+        
+    #vertical-stack {
+        grid-row: 2 / auto;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+      }
+        
+    #page-content h1 {
+      font-size: 2.5em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 2;
+      width: 100%;
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    #page-content h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    #page-content p {
+      font-size: 0.9em;
+      line-height: 1.4;
+      text-align: center;
+      background-color: rgba(245, 245, 220, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      margin: 10px 0;
+      color: black;
+    }
+
+    #page-content li {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .menu-button a, .nav-button a, #side a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .menu-button, .nav-button {
+      color: black;
+    }
+
+    #side {
+        grid-column: 1;
+    }
+
+    #side ul {
+        list-style-type: none;
+    }
+    nav {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      z-index: 4;
+    }
+
+    .nav-button {
+      background-color: #f0f0f0;
+      color: black;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      position: relative;
+      z-index: 5;
+      margin: 0 5px;
+    }
+
+    .nav-button:hover {
+      background-color: #d0d0d0;
+    }
+
+    #menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 3;
+    }
+
+    #menu {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 4;
+    }
+
+    #menu.active {
+      display: flex;
+    }
+
+    #menu-overlay.active {
+      display: block;
+    }
+
+    .menu-button {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: 'Silkscreen', cursive;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu-button:hover {
+      background-color: #d0d0d0;
+    }
+
+    #home-button-nav {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      background-color: #f0f0f0;
+      border: none;
+      transition: background-color 0.3s ease;
+      display: none;
+    }
+
+    #home-button-nav.active {
+      display: flex;
+    }
+
+    #home-button-nav:hover {
+      background-color: #d0d0d0;
+    }
+
+    nav div {
+      display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-button {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+    }
